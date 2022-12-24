@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang= "en">
+<head>
+     	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>About</title>
+		<link rel="stylesheet" href="css/style.css">
+
+		<style>
+			.Product{
+				 border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+
+			}
+
+		</style>
+</head>
+<body>
+	
+	<h1 class="h1">Lorem ipsum dolor sit amet</h1>
+	<h2 style="color:red"> Hello </h2>
+
+	<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis vulputate magna, ac lobortis est consequat et. Cras interdum mattis nisl, ut vulputate est. Pellentesque tempor commodo libero, sit amet mattis est egestas et. Nullam tempus, purus et sollicitudin dictum, justo dolor lacinia arcu, fringilla sodales felis nibh sit amet orci. Nullam non molestie felis. Cras vestibulum lorem nec turpis congue, at rhoncus dolor maximus. Sed quis elit sodales dui auctor tincidunt non eu magna. Nulla gravida bibendum dolor. In luctus pulvinar nibh, at pretium turpis fringilla sed. Ut lorem magna, mollis vel neque sit amet, fringilla commodo ipsum. In ligula nunc, dapibus pretium ultrices sit amet, sollicitudin eu enim. Aenean rutrum fermentum libero, lobortis vestibulum eros eleifend vel. Ut id quam quam. Nulla ultrices urna ullamcorper, auctor ligula vitae, dictum tellus. Suspendisse vitae nisl sit amet ex facilisis pellentesque ut euismod urna.</p>
+
+<p style="color:red;">Click the button below to display the hidden content from the template element.</p>
+
+<button onclick="showContent()">Show hidden content</button>
+
+<template>
+  <h2>Nature</h2>
+  <img src="images/nature.jpg" width="214" height="204">
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+
+
+  <p><br></p>
+
+
+
+          <table>
+        	  <colgroup>
+    <col span="1" style="background-color:grey;">
+    <col style="background-color:blueviolet;">
+    
+  </colgroup>
+        	<captin>Cost of Product</captin>
+        	<tr>
+        		<th>Product Name</th>
+        		<th>Price</th>
+
+        	</tr>
+
+        	<tr>
+        		<td>Mobile</td>
+        		<td>$500</td>
+
+        	</tr>
+
+        	<tr>
+        		<td>Tablet</td>
+        		<td>$200</td>
+
+        	</tr>
+
+        </table>
+
+          <p><br></p>
+
+          <div class="Product">
+  <h2> div element</h2>
+  <p>Donec congue molestie erat nec fermentum. Proin in odio nec leo sodales facilisis.</p>
+</div>
+
+<p> Donec rutrum eleifend urna a blandit.</p>
+
+<h3>The summary element</h3>
+
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+
+ <p><br></p>
+	<a href="index.html">Home</a>
+	<a href="about.html">About</a>
+
+
+</body>
+
+
+</html>
